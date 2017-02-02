@@ -1,0 +1,1088 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	header 
+		overflow-x: hidden
+		overflow-y: hidden
+		nav ul li:first-child
+			margin-left: -100px
+		.number p
+			display: none
+		.number_size span
+			display: block
+			position: relative
+			line-height: 60px
+			text-align: left
+			font-size: 16px
+		.wrap_h_sign_in
+			width: 76px
+			margin-left: -50px
+		#h_sign_up
+			position: relative
+			top: -45px
+			left: 15px
+	.s_newsletter
+		input#name, input#email, button.button_h_sale
+			width: 100%
+			margin-left: 0
+			&::input-placeholder 
+				font-size: 14px
+	.s_invite
+		button.button_h_sale
+			width: 100%
+	.s_menu
+		height: 715px
+		div.line_header_1, div.line_header_4
+			display: none
+		div.line_header_2, div.line_header_3
+			width: 4%
+		.wrap_buttons_menu
+			display: block
+			text-align: center
+			.button_h_sale
+				width: 29%
+			#menu_galleria
+				margin-left: 0
+			#banket_galleria
+				margin-right: 0		
+		.dish, .salat, .dessert
+			height: 380px
+	
+	.s_sign_up
+		h3
+			margin-top: 150px
+		br
+			display: none
+		pre
+			margin-left: 40px
+		h5
+			margin-left: 100px
+		.button_h_sale
+			margin-top: 35px
+
+	.s_gallery		
+		.gallery
+			width: 100%
+			max-width: 500px
+			overflow: hidden
+			height: 100%
+			a
+				width: 100%
+				height: 302px
+				margin: 0
+				padding-top: 35%
+				font-size: 11px
+				line-height: 10%
+			img
+				margin: 0 auto
+				width: 100%
+				height: auto
+			h4
+				height: 100%
+				width: 100%
+				font-size: 25px
+
+	.s_map
+		p:first-child
+			margin-top: 5px
+	
+@media (min-width: 992px) and (max-width: 1200px)
+	.s_stock
+		.dark_line_bg
+			margin-left: 326px
+			height: 390px
+			margin-top: 32px
+			width: 330px
+		.owl-carousel .owl-stage .center img
+			height: 410px	
+			width: 330px
+			margin-left: 6px		
+		.owl-carousel .owl-stage .owl-item.active:not(.center)
+			margin-left: -31px
+			width: 300px
+		.bomb
+			margin-left: 698px
+
+	.s_gallery
+		.container
+			width: 100%
+			margin: 2%
+		.col-md-4
+			padding: 0
+			width: 32%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header 
+		nav ul li:first-child
+			margin-left: 0
+		.nav
+			height: 120px
+			width: 100%
+			margin: 0
+			position: absolute
+			display: inline-block
+		.h_sign_in
+			float: right
+		.big_window
+			display: none
+		h2
+			margin-top: 60px
+		#h_sign_up
+			position: static
+			top: 0
+			margin-left: 0
+		.wrap_h_sign_in
+			float: right
+			margin-left: 0
+			margin-right: 0
+
+	.s_stock
+		.owl-carousel .owl-item img
+			position: relative
+			left: 50%
+			width: auto
+			height: 485px
+			margin-left: -170px
+			margin-top: 35px
+		.dark_line_bg
+			left: 50%
+			margin-left: -136px
+		.bomb
+			margin-left: 478px
+
+	.s_newsletter
+		h2
+			margin-bottom: 30px
+		input
+			margin-top: 40px
+			margin-bottom: 20px
+		button
+			margin-top: 40px
+		height: 320px
+
+	#slideshow .img-wrapper
+		transform: translateX(1000px)
+		&.left
+			transform: translateX(1000px)
+		&.right
+			transform: translateX(-1000px)
+
+	#slideshow.fullscreen .prev img
+		position: relative
+		left: -64px
+		&:hover
+			left: -64px
+
+	#slideshow.fullscreen .next img
+		position: relative
+		left: -32px
+		&:hover
+			left: -32px
+
+	.s_menu
+		height: 620px
+		div.line_header_2, div.line_header_3
+			display: none		
+		.dish, .salat, .dessert
+			height: 286px
+		h4
+			font-size: em(20px)
+		.wrap_buttons_menu .button_h_sale
+			margin: 0 2%
+
+	.s_sign_up
+		height: 1100px
+		h3
+			margin-top: 40px
+		pre
+			text-align: center
+			margin: 40px 0
+		h5
+			text-align: center
+			margin: 0 0 50px
+
+		div.form
+			margin: 0 auto
+		.button_h_sale
+			width: 64%
+			margin: 30px 18%
+
+	.s_gallery		
+		height: 1600px
+		.gallery
+			text-align: center
+			margin: 20px auto
+			a
+				padding-top: 35%
+				font-size: 15px
+			h4
+				line-height: 416px
+				font-size: 34px
+				margin: -378px 0 0 0 
+
+	.s_invite
+		height: 530px
+		.container
+			width: 100%
+		.col-md-4
+			width: 100%
+			input
+				width: 60%
+				margin-right: 20%
+				margin-left: 20%
+		button.button_h_sale
+			width: 60%
+		
+
+	.s_map
+		height: 920px
+		text-align: center
+		br
+			display: none
+		p
+			margin: 15px
+			&:last-child
+				margin-bottom: 40px	
+				& br
+					display: block
+
+	footer
+		height: 250px
+		.f_icons
+			a
+
+				height: 48px
+				width: 48px
+				margin: 10px auto
+				display: block
+	
+		.f_nav p
+			line-height: 1.5
+			font-size: 12px
+
+@media only screen and (max-width : 815px)
+	.s_stock
+		.dark_line_bg
+			margin-left: -135px
+
+	#slideshow .img-wrapper
+		transform: translateX(820px)
+		&.left
+			transform: translateX(820px)
+		&.right
+			transform: translateX(-820px)
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	.thumbs-container
+		display: none
+
+	header
+		.wrap_h_sign_in
+			margin-top: -50px
+		.small_window
+			margin-top: -50px
+		.toggle-mnu 
+			display: block
+		.container
+			padding: 0
+			margin: 0
+		nav 
+			position: absolute
+			width: 100%
+			ul
+				display: none
+				position: absolute
+				margin: 15px 0
+				width: 100%
+				max-width: 100%
+				li
+					display: block
+					margin: 0
+					width: 100%
+					max-width: 100%
+					//margin-left: -10px
+					background-color: #d33732
+					height: 70px
+					transition: all .2s ease
+					a
+						padding: 0
+						margin: 0
+						vertical-align: middle
+						padding: 10px 0
+						line-height: 50px
+						font-size: 18px
+						transition: all .2s ease
+					&:hover
+						background-color: darken(#d33732,10%)
+		li
+			height: 50px
+			&:hover
+				background-color: transparent
+		.number
+			text-align: center
+			width: 100%
+		.number_size span
+			font-size: 18px
+			height: 50px
+			margin-left: 15px
+		nav ul
+			width: 100%
+			text-align: center
+		.nav
+			display: none
+			height: 155px
+		h2
+			margin-top: 115px
+		h4
+			line-height: 19px
+		#h_sign_up
+			margin-left: 40px
+		#h_sign_in
+			margin-left: 30px
+
+	.s_stock
+		.dark_line_bg
+			margin-left: -135px
+		.bomb
+			margin-left: 440px
+
+	.s_newsletter
+		height: 410px
+		button.button_h_sale, 
+		input#email, 
+		input#name
+			width: 90%
+			margin: 4px 5% 20px
+
+	.s_menu
+		height: 1230px
+		.salat, .dish, .dessert
+			display: none
+		br
+			display: block
+		h3
+			margin-bottom: 20px
+		.wrap_buttons_menu
+			margin: 0 10px
+		.wrap_buttons_menu .button_h_sale
+			position: relative
+			border: 0			
+			background-color: #000
+			background-size: 100%
+			background-position: center
+			margin: 22px 0
+			width: 100%
+			max-width: 	400px
+			height: 300px
+			text-align: center
+			transition: all .3s ease
+			background-position: center
+			border-radius: 0
+			color: #fff	
+			&:after
+				content: ""
+				position: absolute
+				width: 100%
+				height: 100%
+				z-index: 2
+				background-color: rgba(0,0,0,.5)
+				margin: 0
+				max-width: 400px
+				margin: 0 auto
+				padding: 3px
+				left: 0
+				top: 0
+				border: 3px solid transparent
+			h5
+				font-size: 26px
+				color: #fff
+				display: block
+				margin: 0
+				margin-top: -15px
+				color: #fff
+				z-index: 3
+				position: relative
+				border-radius: 4px
+				transition: all .35s ease
+				span
+					display: none
+				&:hover
+					opacity: .9
+			&#menu_galleria
+				background-image: url("../img/gallery/1.png")
+			&#map_galleria
+				background-image: url("../img/gallery/2.png")
+			&#banket_galleria
+				background-image: url("../img/gallery/3.png")
+
+	#slideshow:after
+		content: ""
+		width: 92%
+		position: absolute
+		z-index: 12
+		margin: 0 4%
+		bottom: 46px
+		height: 1px
+		background-color: rgba(255,255,255,0.55)
+		color: #fff
+
+	#slideshow.fullscreen .wrap	
+		img
+			max-width: 96%
+			max-height: 86%
+			height: auto
+			margin: auto
+		h3    		
+    		font-size: 16px    		
+    		margin: 0 auto
+	
+	#slideshow .img-wrapper
+		transform: translateX(780px)
+		&.left
+			transform: translateX(780px)
+		&.right
+			transform: translateX(-780px)
+
+	.s_gallery		
+		height: 1300px
+		.gallery
+			max-width: 400px
+			h4
+				margin: -300px 0 0 0
+				font-size: 26px
+
+	.s_invite 
+		h2
+			margin-bottom: 20px
+		.button_h_sale
+			padding: 0
+			width: 40%
+
+	footer
+		height: 480px
+		.f_h3_pub
+			margin-bottom: 70px
+			h3
+				font-size: 20px
+		.f_icons
+			h4
+				margin-bottom: 6px
+				font-size: 16px
+			a
+				display: inline-block
+				margin: 14px 
+				height: 60px
+				width: 60px
+			&#vk
+				background-image: url("../img/footer/vk.png")
+				background-size: 100%
+			&#insta
+				background-image: url("../img/footer/instagram.png")
+				background-size: 100%
+			&#facebook
+				background-image: url("../img/footer/facebook.png")
+				background-size: 100%
+
+		.f_nav
+			display: none
+		.f_powered_by 
+			h5
+				font-size: 30px 
+			img
+				width: 160px
+				height: auto
+
+				
+@media only screen and (width : 768px)
+	header
+		.nav
+			height: 107px
+		.number_size span
+			font-size: 16px
+	.s_stock
+		height: 800px
+	.s_newsletter
+		height: 255px
+@media only screen and (max-width : 580px)
+	h1
+		margin-bottom: 0
+
+	header
+		background-image: url("../img/header/bg_2.png")
+		.nav
+			height: 160px
+		ul
+			li 
+				a
+					margin: 16px 15px 0
+		h1
+			font-family: 'Playfair Display', sans-serif	
+			display: inline-block
+			width: 100%
+			text-align: center
+			font-size: 190px
+			letter-spacing: 30px
+			line-height: 220px
+			margin-top: 0px
+			span
+				font-family: 'Playfair Display', sans-serif	
+				color: $main
+				display: inline-block
+				text-align: center
+				font-size: 190px
+				line-height: 220px
+		h2
+			margin-top: 107px
+			font-size: 80px
+		h3
+			margin-top: 0
+		.small_window #h_sign_up
+			margin-left: -10px
+			margin-top: 16px
+		.wrap_h_sign_in
+			float: left
+			margin-left: 20px
+			margin-top: -40px
+			#h_sign_in
+				margin-left: 150px
+				margin-top: 6px
+		.number_size span
+			opacity: 0
+
+	.s_stock
+		height: 650px
+		.gallery_more_580
+			display: none
+		.dark_line_bg
+			display: none
+		.gallery_less_580
+			height: 640px
+			display: block
+			#slideshow
+				position: relative
+			.wrap_img
+				display: flex
+				justify-content: center
+				align-items: center
+				margin: 0 auto 20px
+				width: 100%
+				img
+					max-width: 400px
+					width: 100%
+					height: auto
+
+	#slideshow .img-wrapper
+		transform: translateX(590px)
+		&.left
+			transform: translateX(590px)
+		&.right
+			transform: translateX(-590px)
+
+	.prev, .next
+		width: 3%
+		min-width: 16px
+		height: 20px
+		padding: 17px 1%
+		color: #999999
+		margin-right: 4px
+		cursor: pointer
+
+	.prev
+		float: left
+		width: 16px
+		overflow: hidden
+		padding: 0
+		height: 20px
+		margin: 17px 1%
+
+	.next
+		float: right
+		width: 16px
+		overflow: hidden
+		padding: 0
+		height: 20px
+		margin: 17px 1%
+
+	.thumbs-container
+		width: 100%
+		height: 50px
+		position: absolute
+		left: 0
+		z-index: 11
+		background: #222222
+		opacity: .9
+		&.top
+			top: 0
+		&.bottom
+			bottom: 0
+
+	ul.thumbs
+	  position: absolute
+	  top: 0
+	  left: 5%
+	  right: 5%
+	  height: 50px
+	  padding: 0
+	  margin: 0 5%
+	  overflow: hidden
+	  white-space: nowrap
+	  text-align: center
+
+	.thumb
+	  display: inline-block
+	  width: 40px
+	  height: 40px
+	  margin: 5px
+	  overflow: hidden
+	  background-size: cover
+	  background-position: center center
+	  cursor: pointer
+	  &:first-of-type
+	    margin-left: 0px
+	  &.active
+	    width: 36px
+	    height: 36px
+	    border: 2px solid #FFF
+
+	#slideshow.fullscreen .prev img
+		position: relative
+		left: -32px
+		top: -6px
+		&:hover
+			left: -48px
+
+	#slideshow.fullscreen .next img
+		position: relative
+		left: -16px
+		top: -6px
+		&:hover
+			left: 0
+	
+	.s_invite 
+		.button_h_sale
+			padding: 0
+			width: 70%
+		.col-md-4 
+			input
+				width: 90%
+				margin-right: 5%
+				margin-left: 5%
+
+@media only screen and (max-width : 544px)
+	.s_newsletter
+		height: 460px
+		h2
+			margin-left: 10px
+			margin-right: 10px
+	header
+		.small_window #h_sign_up
+			margin-left: -10px
+			margin-top: 16px
+		.wrap_h_sign_in
+			float: left
+			margin-left: 20px
+			margin-top: -40px
+			#h_sign_in
+				margin-left: 125px
+				margin-top: 6px
+
+	#slideshow .img-wrapper
+		transform: translateX(550px)
+		&.left
+			transform: translateX(550px)
+		&.right
+			transform: translateX(-550px)
+
+@media only screen and (max-width : 520px)
+	header
+		h1
+			font-size: 170px
+			span
+				font-size: 170px
+
+	#slideshow .img-wrapper
+		transform: translateX(530px)
+		&.left
+			transform: translateX(530px)
+		&.right
+			transform: translateX(-530px)
+
+@media only screen and (max-width : 513px)
+	header
+		height: 850px
+		.nav
+			height: 210px
+	#popup
+		left: 0
+		margin-left: 20px
+		width: 100%
+		height: 350px
+		button
+			margin-top: 150px
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width : 480px)
+	header
+		background-image: url("../img/header/bg_2.png")
+		h2
+			margin-top: 135px
+			font-size: 80px
+		h1
+			margin-bottom: 0px
+			line-height: 260px
+			margin-top: -20px
+			font-size: 150px
+			letter-spacing: 15px
+			span
+				font-size: 150px
+		li
+			height: 45px
+		.number_size span
+			height: 40px
+		h3
+			margin-top: -20px
+		.nav
+			height: 195px
+		.small_window #h_sign_up
+			margin-left: -10px
+			margin-top: 24px
+		.wrap_h_sign_in
+			float: left
+			margin-left: 20px
+			margin-top: -32px
+			#h_sign_in
+				margin-left: 85px
+				margin-top: 6px
+
+	.h_form_sign_in input
+		margin-right: 5%
+		margin-left: 5%
+		width: 90%
+
+	.s_stock
+		.branch
+			display: none
+		.bomb
+			display: none
+
+
+	#slideshow .img-wrapper
+		transform: translateX(490px)
+		&.left
+			transform: translateX(490px)
+		&.right
+			transform: translateX(-490px)
+
+	.s_sign_up
+		div.col-xs-12.col-md-5.col-lg-5
+			margin: 0
+			padding: 0
+		.form
+			input
+				width: 80%
+				margin: 35px 10% 10px
+			input#first_phone
+				width: 19%
+				margin-right: 0
+			input#second_phone
+				width: 50%	
+				margin: 35px 10% 8%
+		input[type=checkbox]+label span
+			margin-left: 15%
+
+	.s_gallery			
+		.gallery
+			a
+				padding-top: 68%
+			h4
+				font-size: 31px
+
+	#popup	
+		width: 100%
+		top: 40px
+
+	.s_sign_up 
+		pre 
+			display: none
+		h4
+			display: block
+			font-family: 'PT Serif', sans-serif
+			font-size: 17px
+			text-align: center
+			margin-bottom: 40px
+			margin-top: 37px
+			line-height: 1.76
+			letter-spacing: 1px
+			overflow: visible
+			br
+				display: block
+
+	.s_invite
+		height: 550px
+
+	.s_map
+		iframe
+			height: 350px
+
+	footer 
+		height: 470px
+		.f_icons
+			embed
+				width: 50px
+				height: 50px
+		.f_powered_by
+			margin-top: 0
+			img
+				width: 160px
+				height: auto
+
+@media only screen and (max-width : 440px)
+	.s_sign_up
+		height: 1180px
+
+	#slideshow .img-wrapper
+		transform: translateX(450px)
+		&.left
+			transform: translateX(450px)
+		&.right
+			transform: translateX(-450px)
+
+@media only screen and (max-width : 420px)
+	.s_newsletter
+		height: 485px
+	
+	#slideshow .img-wrapper
+		transform: translateX(430px)
+		&.left
+			transform: translateX(430px)
+		&.right
+			transform: translateX(-430px)
+
+@media only screen and (max-width : 400px)
+	header
+		height: 800px
+		h1
+			font-size: 130px
+			margin-top: -25px
+			span
+				font-size: 130px
+		.col-sm-6
+			padding-left: 0
+		.small_window #h_sign_up
+			margin-left: -40px
+			margin-top: 24px
+		.wrap_h_sign_in
+			float: left
+			margin-left: 20px
+			margin-top: -32px
+			#h_sign_in
+				margin-left: 10px
+				margin-top: 6px
+
+	.s_newsletter
+		height: 500px
+		h1
+			margin-top: 10px
+			margin-bottom: 10px
+
+	#slideshow .img-wrapper
+		transform: translateX(410px)
+		&.left
+			transform: translateX(410px)
+		&.right
+			transform: translateX(-410px)
+
+	.s_menu
+		height: 1150px
+		.wrap_buttons_menu .button_h_sale
+		h5
+			padding-top: 36%
+			font-size: 24px
+	
+	.s_sign_up 
+		height: 1170px
+		.form
+			height: 100%
+			input, input#second_phone
+				margin: 20px 10% 10px
+			input#first_phone
+				text-indent: 10px	
+			.button_h_sale
+				width: 80%
+				margin: 35px 10%
+		h6
+			margin-left: 22%
+
+	.s_gallery	
+		height: 1150px		
+		.gallery
+			margin-top: 0
+			a
+				padding-top: 74%
+
+@media only screen and (max-width : 350px)
+	#slideshow .img-wrapper
+		transform: translateX(360px)
+		&.left
+			transform: translateX(360px)
+		&.right
+			transform: translateX(-360px)
+	.s_gallery
+		height: 1000px
+	.h_form_sign_up input
+		width: 300px
+		margin-left: 80px
+	.h_form_sign_up input#second_phone
+		margin-left: 15px
+	.h_form_sign_up input[type=checkbox]+label span
+		margin-left: 80px
+	.h_form_sign_up h6
+		margin-left: 100px	
+
+@media only screen and (max-width : 343px)
+	#slideshow .img-wrapper
+		transform: translateX(350px)
+		&.left
+			transform: translateX(350px)
+		&.right
+			transform: translateX(-350px)
+	header
+		.nav
+			height: 200px
+		.h_sale
+			margin: 0
+		h2
+			font-size: 75px
+			margin-top: 135px
+		h1
+			font-size: 110px
+			margin-top: -40px
+			span
+				font-size: 110px
+
+@media only screen and (max-width : 320px)
+	#slideshow .img-wrapper
+		transform: translateX(330px)
+		&.left
+			transform: translateX(330px)
+		&.right
+			transform: translateX(-330px)
+
+	header
+		.col-sm-6
+			margin-left: 0
+			padding-left: 0
+		.nav
+			height: 195px
+		h2
+			font-size: 68px
+		h1
+			font-size: 110px
+			margin-top: -40px
+			span
+				font-size: 110px
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.s_menu .button_h_sale
+		transition: all .3s ease
+		border-radius: 0
+		&:focus
+			outline: none
+		&:hover			
+			border-radius: 8px
+			background-color: $main
+			border-color: $main
+			h5
+				color: #fff
+	
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 991px)
+	header .small_window #h_sign_up
+		display: none
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	#slideshow .img-wrapper
+		transform: translateX(1510px)
+		&.left
+			transform: translateX(1510px)
+		&.right
+			transform: translateX(-1510px)
+
+@media only screen and (min-width : 1500px)
+	#slideshow .img-wrapper
+		transform: translateX(2010px)
+		&.left
+			transform: translateX(2010px)
+		&.right
+			transform: translateX(-2010px)
+
+@media only screen and (min-width : 2000px)
+	#slideshow .img-wrapper
+		transform: translateX(2510px)
+		&.left
+			transform: translateX(2510px)
+		&.right
+			transform: translateX(-2510px)
+
+@media only screen and (min-width : 2500px)
+	#slideshow .img-wrapper
+		transform: translateX(3210px)
+		&.left
+			transform: translateX(3210px)
+		&.right
+			transform: translateX(-3210px)
+
+@media only screen and (min-width : 3200px)
+	#slideshow .img-wrapper
+		transform: translateX(4010px)
+		&.left
+			transform: translateX(4010px)
+		&.right
+			transform: translateX(-4010px)
+
+@media only screen and (min-width : 4000px)
+	#slideshow .img-wrapper
+		transform: translateX(5010px)
+		&.left
+			transform: translateX(5010px)
+		&.right
+			transform: translateX(-5010px)

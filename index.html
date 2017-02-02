@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Balcon Pub</title>
+	<meta name="description" content="">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">	
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+		
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+	
+</head>
+
+<body>
+	<div class="wrap_this_shit">
+	<header>		
+		<div class="nav">	
+		</div>
+		<div class="container">
+			<div class="row">
+
+
+				<div class="col-md-3 col-sm-3 number_size">
+					<div class="number">
+						<p>
+							Хотите забронировать столик, звоните!<br>
+							+38 (096)-666-69-99
+						</p>						
+					</div>
+					<span>+38 (096)-666-69-99</span>
+				</div>
+
+				<div class="col-md-6 col-sm-9">
+					<nav>
+						<ul>
+
+							<li>
+								<a href="">Главная</a>
+							</li>
+
+							<li id="li_stocks">
+								<a href="">Акции</a>
+							</li>
+
+							<li id="li_menu">
+								<a href="">Меню</a>
+							</li>
+
+							<li id="li_gallery">
+								<a href="">Галерея</a>
+							</li>
+
+							<li id="li_contacnts">
+								<a href="">Контакты</a>
+							</li>
+
+						</ul>
+					</nav>
+
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="wrap_h_sign_in">
+						<button id="h_sign_in">ВХОД</button>	
+					</div>
+					<button id="h_sign_up" class="big_window">регистрация</button>			
+				</div>			
+				<div class="col-sm-6 col-xs-6 small_window">
+					<button id="h_sign_up" class="small_window">регистрация</button>
+				</div>
+				<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+			</div>
+		</div>
+		<h2>BALKON</h2>
+		<h1>P<span>U</span>B</h1>
+		<h3>У нас очень вкусно и комфортно!</h3>
+		<div class="line_header"></div>
+		<h4>самое подходящее место для тех, кто ищет<br>
+			где можно покушать очень вкусно<br>
+			по выгодным ценам</h4>
+		<div class="h_sale">
+			<button class="button_h_sale">
+				ПОЛУЧИТЬ СКИДКУ!
+			</button>
+		</div>
+	</header>
+
+
+
+
+
+
+
+
+	<section class="s_stock">
+		<div class="container">
+			<div class="row">
+				<h3>Акции</h3>
+				<div class="gallery_more_580">	
+					<div class="dark_line_bg">						
+					</div>
+					<div class="owl-carousel">
+						<div><img src="img/stocks/01.png" alt=""></div>
+						<div><img src="img/stocks/02.png" alt=""></div>
+						<div><img src="img/stocks/03.png" alt=""></div>
+					</div>
+					<div class="branch"><img src="img/stocks/branch.png" alt="веточка"></div>
+					<div class="bomb"><img src="img/stocks/bomb.png" alt="граната фрукт"></div>
+				</div>
+				<div class="gallery_less_580">
+					<div class="wrap_gallery">
+						<div id="g_1" class="after_1 action_1"> 
+							<img src="img/gallery/04.png" alt="1"> 
+						</div>
+
+						<div id="g_2" class="after_2 action_2"> 
+							<img src="img/gallery/7.png" alt="2"> 
+						</div>
+
+						<div id="g_3" class="after_3 action_3"> 
+							<img src="img/gallery/8.png" alt="3">
+						</div>
+					</div>
+					<img id="stock_left" src="img/lc/left-arrow.png" alt="">
+					<img id="stock_right" src="img/lc/right-arrow.png" alt="">
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	<section class="s_newsletter">
+		<div class="container">
+			<div class="row">
+				<h2>ПОДПИШИТЕСЬ НА РАССЬІЛКУ, ЧТО БЬІ БЬІТЬ В КУРСЕ НОВЬІХ АКЦИЙ</h2>
+				<form action="" name="newsletter">
+					<div class="col-sm-4">
+						<input type="text" name="name" id="name" placeholder="Как вас зовут?">
+					</div>
+					<div class="col-sm-4">
+						<input type="text" name="email" id="email" placeholder="Ваш e-mail адрес">
+					</div>
+				</form>
+				<div class="col-sm-4">
+					<button class="button_h_sale">
+						ПОДПИСАТЬСЯ!
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s_menu">
+		<div class="container">
+			<div class="row">
+				<h3>МЕНЮ</h3>
+
+				<div class="col-xs-4">
+					<div class="dish">
+						<h4>Основные блюда</h4>
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="salat">
+						<h4>Салаты</h4>
+					</div>					
+				</div>
+
+				<div class="col-xs-4">
+					<div class="dessert">
+						<h4>Десерты</h4>
+					</div>
+				</div>
+
+				<div class="wrap_buttons_menu">
+					<div class="line_header_1"></div>
+					<button class="button_h_sale" id="menu_galleria">
+						<h5> Основное меню <span>>></span> </h5>
+					</button>
+					<br>
+					<div class="line_header_2"></div>
+					<button class="button_h_sale" id="map_galleria">
+						<h5> Карта бара <span>>></span></h5>
+					</button>
+					<br>
+					<div class="line_header_3"></div>
+					<button class="button_h_sale" id="banket_galleria">
+						<h5> Банкетное меню <span>>></span> </h5>
+					</button>
+					<div class="line_header_4"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<section class="s_sign_up">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-7 col-md-6 col-xs-12">
+					<h3>ЗАРЕГЕСТРИРУЙСЯ НА НАШЕМ САЙТЕ<br>
+						И ПОЛУЧИ СКИДКУ 10% НА ВСЕ БЛЮДА</h3>
+						<pre>А ТАК ЖЕ ВОЗМОЖНОСТЬ:
+	- УЧАСТИЯ ВО ВСЕХ АКЦИЯХ;
+	- УЧАСТИЯ В ПРОГРАММЕ ЛОЯЛЬНОСТИ;
+	- ПОЛУЧЕНИЯ БОНУСОВ И НАЧИСЛЕНИЙ;
+	- СКИДКИ ЗА ПРИГЛАШЕННЬІХ ДРУЗЕЙ.</pre>
+						<h4>
+							А ТАК ЖЕ ВОЗМОЖНОСТЬ:<br>	
+							- УЧАСТИЯ ВО ВСЕХ АКЦИЯХ;<br>
+							- УЧАСТИЯ В ПРОГРАММЕ ЛОЯЛЬНОСТИ;<br>
+							- ПОЛУЧЕНИЯ БОНУСОВ И НАЧИСЛЕНИЙ;<br>
+							- СКИДКИ ЗА ПРИГЛАШЕННЬІХ ДРУЗЕЙ.
+						</h4>
+							<h5>
+								*акции и бонусы не суммируются с другими скидками
+							</h5>
+						</div>
+
+
+						<div class="col-lg-5 col-md-6 col-xs-12">
+							<div class="form">
+								<form action="" name="sign_up">								
+									<input type="text" name="name" id="name" placeholder="Ваше имя">							
+									<br>								
+									<input type="text" name="surname" id="surname" placeholder="Ваша фамилия">
+									<br>
+									<input type="text" name="first_phone" id="first_phone" disabled placeholder="+38">
+									<input type="text" name="second_phone" id="second_phone" placeholder="(ххх) ххх-хх-хх">
+									<br>
+									<input type="text" name="email" id="email" placeholder="e-mail адрес">				
+									<br>
+									<input type="text" name="password" id="password" placeholder="Придумайте пароль">						
+									<br>
+									<input type="text" name="password_again" id="password_again" placeholder="Повторите пароль">
+									<br>	
+									<input type="checkbox" id="c1" name="cc">
+									<label for="c1"><span></span></label>	
+									<h6>присылать лучшие предложения от BALKON PUB</h6>						
+									<br>
+									<button class="button_h_sale">
+										ЗАРЕГЕСТРИРОВАТЬСЯ!
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-1 col-xs-12"></div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="s_gallery">
+		<div class="container">
+			<div class="row">
+				<h3>ГАЛЕРЕЯ</h3>
+
+				<div class="col-md-4 col-xs-12">
+					<div class="gallery popup-gallery_1">
+						<a id="interior" href="img/gallery/interior.png" title="Interior">
+							смотреть все фото >>
+						</a>
+						<img src="img/gallery/interior.png" alt="Interior">
+						<h4>Интерьер</h4>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-xs-12">
+					<div class="gallery popup-gallery_2">
+						<a id="eat" href="img/gallery/eat.png" title="Eat">
+							смотреть все фото >>
+						</a>
+						<img src="img/gallery/eat.png" alt="Eat">
+						<h4>Блюда</h4>
+						<!-- <a href="img/gallery/2.png" title="Eat">
+							<img src="img/gallery/1.png" alt="Eat">
+						</a>
+						<a href="img/gallery/9.png" title="Eat">
+							<img src="img/gallery/1.png" alt="Eat">
+						</a>
+						<a href="img/gallery/6.png" title="Eat">
+							<img src="img/gallery/1.png" alt="Eat">
+						</a>
+						<a href="img/gallery/3.png" title="Eat">
+							<img src="img/gallery/1.png" alt="Eat">
+						</a> -->
+					</div>
+				</div>
+
+				<div class="col-md-4 col-xs-12">
+					<div class="gallery popup-gallery_3">
+						<a id="client" href="img/gallery/clients.png" title="Client">
+							смотреть все фото >>
+						</a>
+						<img src="img/gallery/clients.png" alt="Client">
+						<h4>Клиенты</h4>
+					<!-- 	<a href="img/gallery/9.png" title="Client">
+							<img src="img/gallery/1.png" alt="Client">
+						</a>
+						<a href="img/gallery/10.png" title="Client">
+							<img src="img/gallery/1.png" alt="Client">
+						</a>
+						<a href="img/gallery/7.png" title="Client">
+							<img src="img/gallery/1.png" alt="Client">
+						</a>
+						<a href="img/gallery/6.png" title="Client">
+							<img src="img/gallery/1.png" alt="Client">
+						</a> -->
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+	<section class="s_invite">
+		<div class="container">
+			<div class="row">
+				<h2>ХОТИТЕ ПРИЙТИ?</h2>
+				<h4>вы можете забронировать столик заполнив простую форму!</h4>
+				<form action="" name="s_invite">
+					<div class="col-md-4">
+						<input type="text" name="name" id="name" placeholder="Как вас зовут?">
+					</div>
+
+					<div class="col-md-4">
+							<input type="text" name="members" id="members" placeholder="Сколько будет гостей?">
+					</div>
+
+					<div class="col-md-4">
+						<input type="text" name="phone" id="phone" placeholder="Ваш номер телефона">
+					</div>
+				</form>
+					<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<button class="button_h_sale">
+					ЗАБРОНИРОВАТЬ!
+				</button>
+				</div>
+				<div class="col-md-4"></div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="s_map">
+		<div class="container">
+			<div class="row">
+				<h2>КАК НАС НАЙТИ?</h2>
+				<div class="col-md-4">
+
+					<p>
+						Адрес:<br>
+						Улица Сичевых Стрельцов 14
+						(бывш. улица Артема 14)
+					</p>
+					
+					<p>
+						Время работы:<br>
+						пн-вс, 9:00 - 23:00
+					</p>
+					
+					<p>
+						Контакты:<br>
+						(096) 666-69-99
+					</p>
+					
+					<p>
+						impressa1@mail.ru<br>
+						info@balkon.dp.ua
+					</p>
+
+				</div>
+				<div class="col-md-8">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1322.9293216888348!2d35.0440835326014!3d48.45924377505107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDI3JzMzLjUiTiAzNcKwMDInNDEuOSJF!5e0!3m2!1sru!2sru!4v1482678165033" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-3 col-sm-3">
+					<div class="f_h3_pub">						
+						<h3>Impressa & Balkon PUB<br> 
+							2016 all rights reserved</h3>
+					</div>					
+				</div>
+
+				<div class="col-lg-4 col-sm-4">
+					<div class="f_icons">
+						<h4>Мы в социальных сетях:</h4>
+
+						<a id="insta" target="_blank" href="https://www.instagram.com/balcone_cafe/"></a>
+       			<a id="vk" target="_blank" href="https://vk.com/balkon_cafe"></a>
+       		  <a id="facebook" target="_blank" href="https://www.facebook.com/balconecafe"></a>
+					</div>					
+				</div>
+
+				<div class="col-lg-2 col-sm-3">
+					<div class="f_nav">
+						<h5>Навигация по сайту:</h5>
+						<p id="main">Главная</p>
+						<p id="stock">Акции</p>
+						<p id="menu">Меню</p>
+						<p id="sign_up">Регистрация</p>
+						<p id="contant">Контакты</p>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-sm-2">
+					<div class="f_powered_by">
+						<h5>
+							powered by:
+						</h5>
+						<a href="http://delta-std.com/"><img src="img/footer/delta-std.png" alt="delta"></a>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+<!-- /////////////
+//////////////// -->
+
+	<div id="modal_form_sign_in">			
+			<span id="modal_close"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть --> 
+			<div class="h_form_sign_in">
+				<form action="" name="form_sign_in">								
+					<input type="text" name="name" id="name" placeholder="Ваше имя" data-name="Ваше им'я">	
+							<br>						
+					<input type="text" name="phone" id="phone" placeholder="+38 (ххх) ххх-хх-хх" data-name="Ваш телефон">			
+					<br>
+					<button class="button_h_sale">
+						<h5>ВОЙТИ</h5>
+					</button>
+				</form>
+			</div>
+	</div>
+	<div id="popup">
+	<h1>Заполните пожалуйста поля</h1>
+	<button id="okay">Принять</button>
+	</div>
+	<div id="modal_form">			
+      <span id="modal_close"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть --> 
+      <div class="h_form_sign_up">
+	      <form action="" id="pituh" name="form_sign_up">								
+	      	<input type="text" name="name" id="name" placeholder="Ваше имя">							
+	      	<br>								
+	      	<input type="text" name="surname" id="surname" placeholder="Ваша фамилия">
+	      	<br>
+	      	<input type="text" name="first_phone" id="first_phone" disabled placeholder="+38">
+	      	<input type="text" name="second_phone" id="second_phone" placeholder="(ххх) ххх-хх-хх">
+	      	<br>
+	      	<input type="text" name="email" id="email" placeholder="e-mail адрес">				
+	      	<br>
+	      	<input type="text" name="password" id="password" placeholder="Придумайте пароль">						
+	      	<br>
+	      	<input type="text" name="password_again" id="password_again" placeholder="Повторите пароль">
+	      	<br>	
+	      	<input type="checkbox" id="c2" name="cc2">
+	      	<label for="c2"><span></span></label>	
+	      	<h6>присылать лучшие предложения от BALKON PUB</h6>						
+	      	<br>
+	      	<button class="button_h_sale">
+	      		ЗАРЕГЕСТРИРОВАТЬСЯ!
+	      	</button>
+	      </form>
+	    </div>
+	</div>
+
+	<div id="overlay_head"></div>
+
+	<!-- Пoдлoжкa -->
+
+	<div id="overlay"></div>
+
+	<!-- modal form -->
+
+
+	<div id="container_1">
+		<span id="modal_close_slide_show"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть -->
+		<div id="slideshow" class="fullscreen">
+
+			<!-- Below are the images in the gallery -->
+
+			<div class="wrap">
+				<img id="img-1" src="img/gallery/1.png" data-img-id="1" alt="Первое блюдо"    class="img-wrapper active" >
+
+				<img id="img-2" src="img/gallery/2.png" data-img-id="2" alt="Второе блюдо" class="img-wrapper" >			
+
+				<img id="img-3" src="img/gallery/3.png" data-img-id="3" alt="Блюдо №3" class="img-wrapper" >			
+
+				<img id="img-4" src="img/gallery/4.png" data-img-id="4" alt="Блюдо №4" class="img-wrapper" >			
+
+				<img id="img-5" src="img/gallery/5.png" data-img-id="5" alt="Блюдо №5" class="img-wrapper" >
+				
+				<img id="img-6" src="img/gallery/6.png" data-img-id="6" alt="Блюдо №6" class="img-wrapper" > 							
+
+			</div>
+			<!-- Below are the thumbnails of above images -->
+
+			<div class="thumbs-container bottom">
+
+				<div id="prev-btn" class="prev"><img src="img/gallery/chevron_big.png" alt="arrow"></div>
+
+				<ul class="thumbs">
+					<li data-thumb-id="1" class="thumb active" id="thumb-1" style="background-image: url('img/gallery/1.png')"></li>
+					<li data-thumb-id="2" class="thumb" id="thumb-2" style="background-image: url('img/gallery/2.png')"></li>
+					<li data-thumb-id="3" class="thumb" id="thumb-3" style="background-image: url('img/gallery/3.png')"></li>
+					<li data-thumb-id="4" class="thumb" id="thumb-4" style="background-image: url('img/gallery/4.png')"></li>
+					<li data-thumb-id="5" class="thumb" id="thumb-5" style="background-image: url('img/gallery/5.png')"></li>
+					<li data-thumb-id="6" class="thumb" id="thumb-6" style="background-image: url('img/gallery/6.png')"></li>
+				</ul>
+				<div id="next-btn" class="next"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="container_2">
+		<span id="modal_close_slide_show"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть -->
+		<div id="slideshow" class="fullscreen">
+
+			<!-- Below are the images in the gallery -->
+
+			<div class="wrap">
+				<img id="img-1" src="img/gallery/3.png" data-img-id="1" alt="Блюдо №1" class="img-wrapper active" >				
+
+				<img id="img-2" src="img/gallery/2.png" data-img-id="2" alt="Блюдо №2" class="img-wrapper" >		
+
+				<img id="img-3" src="img/gallery/3.png" data-img-id="3" alt="Блюдо №3" class="img-wrapper" >		
+
+				<img id="img-4" src="img/gallery/4.png" data-img-id="4" alt="Блюдо №4" class="img-wrapper" >		
+
+				<img id="img-5" src="img/gallery/5.png" data-img-id="5" alt="Блюдо №5" class="img-wrapper" >
+				
+				<img id="img-6" src="img/gallery/6.png" data-img-id="6" alt="Блюдо №6" class="img-wrapper" > 	
+
+				<img id="img-7" src="img/gallery/7.png" data-img-id="7" alt="Блюдо №7" class="img-wrapper" >
+				
+
+			</div>
+			<!-- Below are the thumbnails of above images -->
+
+			<div class="thumbs-container bottom">
+
+				<div id="prev-btn" class="prev"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+
+					<ul class="thumbs">
+						<li data-thumb-id="1" class="thumb active" id="thumb-1" style="background-image: url('img/gallery/3.png')"></li>
+						<li data-thumb-id="2" class="thumb" id="thumb-2" style="background-image: url('img/gallery/2.png')"></li>
+						<li data-thumb-id="3" class="thumb" id="thumb-3" style="background-image: url('img/gallery/3.png')"></li>
+						<li data-thumb-id="4" class="thumb" id="thumb-4" style="background-image: url('img/gallery/4.png')"></li>
+						<li data-thumb-id="5" class="thumb" id="thumb-5" style="background-image: url('img/gallery/5.png')"></li>
+						<li data-thumb-id="6" class="thumb" id="thumb-6" style="background-image: url('img/gallery/6.png')"></li>
+						<li data-thumb-id="7" class="thumb" id="thumb-7" style="background-image: url('img/gallery/7.png')"></li> 
+				</ul>
+				<div id="next-btn" class="next"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="container_3">
+		<span id="modal_close_slide_show"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть -->
+		<div id="slideshow" class="fullscreen">
+
+			<!-- Below are the images in the gallery -->
+
+			<div class="wrap">
+				<img id="img-1" src="img/gallery/3.png" data-img-id="1" alt="Блюдо №1" class="img-wrapper active" >				
+
+				<img id="img-2" src="img/gallery/2.png" data-img-id="2" alt="Блюдо №2" class="img-wrapper" >		
+
+				<img id="img-3" src="img/gallery/1.png" data-img-id="3" alt="Блюдо №3" class="img-wrapper" >		
+
+				<img id="img-4" src="img/gallery/7.png" data-img-id="4" alt="Блюдо №4" class="img-wrapper" >		
+
+				<img id="img-5" src="img/gallery/5.png" data-img-id="5" alt="Блюдо №5" class="img-wrapper" >
+				
+				<img id="img-6" src="img/gallery/6.png" data-img-id="6" alt="Блюдо №6" class="img-wrapper" > 	
+
+				<img id="img-7" src="img/gallery/4.png" data-img-id="7" alt="Блюдо №7" class="img-wrapper" >
+				
+
+			</div>
+			<!-- Below are the thumbnails of above images -->
+
+			<div class="thumbs-container bottom">
+
+				<div id="prev-btn" class="prev"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+
+				<ul class="thumbs">
+					<li data-thumb-id="1" class="thumb active" id="thumb-1" style="background-image: url('img/gallery/3.png')"></li>
+					<li data-thumb-id="2" class="thumb" id="thumb-2" style="background-image: url('img/gallery/2.png')"></li>
+					<li data-thumb-id="3" class="thumb" id="thumb-3" style="background-image: url('img/gallery/1.png')"></li>
+					<li data-thumb-id="4" class="thumb" id="thumb-4" style="background-image: url('img/gallery/7.png')"></li>
+					<li data-thumb-id="5" class="thumb" id="thumb-5" style="background-image: url('img/gallery/5.png')"></li>
+					<li data-thumb-id="6" class="thumb" id="thumb-6" style="background-image: url('img/gallery/6.png')"></li>
+					<li data-thumb-id="7" class="thumb" id="thumb-7" style="background-image: url('img/gallery/4.png')"></li> 
+				</ul>
+				<div id="next-btn" class="next"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+			</div>
+		</div>
+	</div>
+
+	<div id="container_4">
+		<span id="modal_close_slide_show"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть -->
+		<div id="slideshow" class="fullscreen">
+
+			<!-- Below are the images in the gallery -->
+
+			<div class="wrap">
+				<img id="img-1" src="img/gallery/1.png" data-img-id="1" alt="Первое блюдо"    class="img-wrapper active" >
+
+				<img id="img-2" src="img/gallery/2.png" data-img-id="2" alt="Второе блюдо" class="img-wrapper" >			
+
+				<img id="img-3" src="img/gallery/3.png" data-img-id="3" alt="Блюдо №3" class="img-wrapper" >			
+
+				<img id="img-4" src="img/gallery/4.png" data-img-id="4" alt="Блюдо №4" class="img-wrapper" >			
+
+				<img id="img-5" src="img/gallery/5.png" data-img-id="5" alt="Блюдо №5" class="img-wrapper" >
+				
+				<img id="img-6" src="img/gallery/6.png" data-img-id="6" alt="Блюдо №6" class="img-wrapper" > 							
+
+			</div>
+			<!-- Below are the thumbnails of above images -->
+
+			<div class="thumbs-container bottom">
+
+				<div id="prev-btn" class="prev"><img src="img/gallery/chevron_big.png" alt="arrow"></div>
+
+				<ul class="thumbs">
+					<li data-thumb-id="1" class="thumb active" id="thumb-1" style="background-image: url('img/gallery/1.png')"></li>
+					<li data-thumb-id="2" class="thumb" id="thumb-2" style="background-image: url('img/gallery/2.png')"></li>
+					<li data-thumb-id="3" class="thumb" id="thumb-3" style="background-image: url('img/gallery/3.png')"></li>
+					<li data-thumb-id="4" class="thumb" id="thumb-4" style="background-image: url('img/gallery/4.png')"></li>
+					<li data-thumb-id="5" class="thumb" id="thumb-5" style="background-image: url('img/gallery/5.png')"></li>
+					<li data-thumb-id="6" class="thumb" id="thumb-6" style="background-image: url('img/gallery/6.png')"></li>
+				</ul>
+				<div id="next-btn" class="next"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="container_5">
+		<span id="modal_close_slide_show"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть -->
+		<div id="slideshow" class="fullscreen">
+
+			<!-- Below are the images in the gallery -->
+
+			<div class="wrap">
+				<img id="img-1" src="img/gallery/3.png" data-img-id="1" alt="Блюдо №1" class="img-wrapper active" >				
+
+				<img id="img-2" src="img/gallery/2.png" data-img-id="2" alt="Блюдо №2" class="img-wrapper" >		
+
+				<img id="img-3" src="img/gallery/3.png" data-img-id="3" alt="Блюдо №3" class="img-wrapper" >		
+
+				<img id="img-4" src="img/gallery/4.png" data-img-id="4" alt="Блюдо №4" class="img-wrapper" >		
+
+				<img id="img-5" src="img/gallery/5.png" data-img-id="5" alt="Блюдо №5" class="img-wrapper" >
+				
+				<img id="img-6" src="img/gallery/6.png" data-img-id="6" alt="Блюдо №6" class="img-wrapper" > 	
+
+				<img id="img-7" src="img/gallery/7.png" data-img-id="7" alt="Блюдо №7" class="img-wrapper" >
+				
+
+			</div>
+			<!-- Below are the thumbnails of above images -->
+
+			<div class="thumbs-container bottom">
+
+				<div id="prev-btn" class="prev"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+
+					<ul class="thumbs">
+						<li data-thumb-id="1" class="thumb active" id="thumb-1" style="background-image: url('img/gallery/3.png')"></li>
+						<li data-thumb-id="2" class="thumb" id="thumb-2" style="background-image: url('img/gallery/2.png')"></li>
+						<li data-thumb-id="3" class="thumb" id="thumb-3" style="background-image: url('img/gallery/3.png')"></li>
+						<li data-thumb-id="4" class="thumb" id="thumb-4" style="background-image: url('img/gallery/4.png')"></li>
+						<li data-thumb-id="5" class="thumb" id="thumb-5" style="background-image: url('img/gallery/5.png')"></li>
+						<li data-thumb-id="6" class="thumb" id="thumb-6" style="background-image: url('img/gallery/6.png')"></li>
+						<li data-thumb-id="7" class="thumb" id="thumb-7" style="background-image: url('img/gallery/7.png')"></li> 
+				</ul>
+				<div id="next-btn" class="next"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="container_6">
+		<span id="modal_close_slide_show"><img src="img/gallery/cancel.png" alt=""></span> <!-- Кнoпкa зaкрыть -->
+		<div id="slideshow" class="fullscreen">
+
+			<!-- Below are the images in the gallery -->
+
+			<div class="wrap">
+				<img id="img-1" src="img/gallery/3.png" data-img-id="1" alt="Блюдо №1" class="img-wrapper active" >				
+
+				<img id="img-2" src="img/gallery/2.png" data-img-id="2" alt="Блюдо №2" class="img-wrapper" >		
+
+				<img id="img-3" src="img/gallery/1.png" data-img-id="3" alt="Блюдо №3" class="img-wrapper" >		
+
+				<img id="img-4" src="img/gallery/7.png" data-img-id="4" alt="Блюдо №4" class="img-wrapper" >		
+
+				<img id="img-5" src="img/gallery/5.png" data-img-id="5" alt="Блюдо №5" class="img-wrapper" >
+				
+				<img id="img-6" src="img/gallery/6.png" data-img-id="6" alt="Блюдо №6" class="img-wrapper" > 	
+
+				<img id="img-7" src="img/gallery/4.png" data-img-id="7" alt="Блюдо №7" class="img-wrapper" >
+				
+
+			</div>
+			<!-- Below are the thumbnails of above images -->
+
+			<div class="thumbs-container bottom">
+
+				<div id="prev-btn" class="prev"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+
+				<ul class="thumbs">
+					<li data-thumb-id="1" class="thumb active" id="thumb-1" style="background-image: url('img/gallery/3.png')"></li>
+					<li data-thumb-id="2" class="thumb" id="thumb-2" style="background-image: url('img/gallery/2.png')"></li>
+					<li data-thumb-id="3" class="thumb" id="thumb-3" style="background-image: url('img/gallery/1.png')"></li>
+					<li data-thumb-id="4" class="thumb" id="thumb-4" style="background-image: url('img/gallery/7.png')"></li>
+					<li data-thumb-id="5" class="thumb" id="thumb-5" style="background-image: url('img/gallery/5.png')"></li>
+					<li data-thumb-id="6" class="thumb" id="thumb-6" style="background-image: url('img/gallery/6.png')"></li>
+					<li data-thumb-id="7" class="thumb" id="thumb-7" style="background-image: url('img/gallery/4.png')"></li> 
+				</ul>
+				<div id="next-btn" class="next"> <img src="img/gallery/chevron_big.png" alt="arrow"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->	
+
+	<script src="js/libs.js"></script>
+	<script src="js/com_mini.js"></script>
+	
+	<style>
+		.owl-controls .owl-nav .owl-prev, .owl-controls .owl-nav .owl-prev:hover, .owl-controls .owl-nav .owl-prev:focus {
+			background-image: url(img/stocks/arrow.png);
+			width: 18px;
+			height: 34px;
+			z-index: 100;
+			background-color: transparent;
+			position: absolute;
+			margin-top: -3px;
+			left: 475px;
+		}
+		.owl-controls .owl-nav .owl-next, .owl-controls .owl-nav .owl-next:hover, .owl-controls .owl-nav .owl-next:focus {
+			background-image: url(img/stocks/next.png);
+			width: 18px;
+			z-index: 1000000000;
+			height: 34px;
+			background-color: transparent;
+			position: absolute;
+			margin-top: -3px;
+			right: 479px;
+		}
+		.owl-theme .owl-dots .owl-dot span, 
+		.owl-theme .owl-dots .active span, 
+		.owl-theme .owl-dots .owl-dot span:hover, 
+		.owl-theme .owl-dots .owl-dot span:focus, 
+		.owl-theme .owl-dots .active span:focus,
+		.owl-theme .owl-dots .active span:hover{
+			width: 18px;
+			height: 18px;
+			border: 2px solid #000;
+			background: transparent;
+		}
+		.owl-theme .owl-dots .owl-dot.active span, 
+		.owl-theme .owl-dots .owl-dot:hover span {
+			color: #000;
+		}
+		.owl-carousel .owl-theme .owl-center .owl-loaded,
+		.owl-theme .owl-dots .owl-dot.active span, 
+		.owl-theme .owl-dots .owl-dot:hover span,
+		.owl-carousel .owl-theme .owl-center .owl-loaded {
+			background-color: #000;
+		} 
+	</style>
+
+	<!-- Load Scripts End -->
+<!-- 	<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.2'><\/script>".replace("HOST", location.hostname));
+//]]></script> -->
+</body>
+</html>
